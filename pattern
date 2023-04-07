@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int row , col , num;
+    cin >> num;
+    
+    for ( row = 0; row < num; row++)
+    {
+        for (col = 0; col < num + 3 - row; col++)
+        {
+            cout << " ";
+        }
+        for ( col = 0; col < row + 1; col++)
+        {
+            cout << row + 1;                                                                   //<< "*";    //  we don't need in the end of start so
+            if (col != row  )
+            {
+                cout << "*";
+            }
+            
+        }
+        cout << endl;
+        
+        
+    }
+    
+    return 0;
+}
